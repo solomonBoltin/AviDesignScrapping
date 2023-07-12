@@ -1,5 +1,4 @@
 import sys
-import traceback
 from time import sleep
 
 from pages.WallpaperPage import WallpaperPage
