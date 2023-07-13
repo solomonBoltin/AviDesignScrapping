@@ -10,10 +10,9 @@ class PageObject(DriverTools):
     def __init__(self, driver=None):
         if not driver:
             chrome_options = Options()
-            chrome_options.add_argument("--headless")
+            # chrome_options.add_argument("--headless")
 
-            driver = webdriver.Chrome("C:\\Users\\bolts\\Downloads\\chrome\\chromedriver.exe",
-                                      options=chrome_options)
+            driver = webdriver.Chrome(options=chrome_options)
         super().__init__(driver)
         if self.page_url:
             driver.get(self.page_url)
